@@ -1,8 +1,9 @@
 #
-# Cookbook Name:: zabbix-custom-checks
-# Recipe:: chef-client
+# Cookbook Name:: zabbix-chef-client-handler
+# Recipe:: default
 #
 # Copyright 2012, Steffen Gebert / TYPO3 Association
+# Copyright 2016, Vladimir Kamarzin
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
