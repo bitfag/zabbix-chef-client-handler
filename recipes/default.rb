@@ -21,7 +21,7 @@
 include_recipe "chef_handler::default"
 
 template "#{node.chef_handler.handler_path}/zabbix-report.rb" do
-  source "chef-client/chef-client-handler.rb"
+  source "chef-client-handler.rb"
 end
 
 # We register ourself as a report handler, which runs at the end of chef run
