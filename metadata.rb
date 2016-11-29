@@ -1,5 +1,5 @@
 name             'zabbix-chef-client-handler'
-maintainer       'tgt'
+maintainer       'Vladimir Kamarzin'
 maintainer_email 'vvk@vvk.pp.ru'
 license          'Apache 2.0'
 description      'Installs/Configures zabbix-chef-client-handler'
