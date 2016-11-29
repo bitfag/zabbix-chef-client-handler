@@ -18,7 +18,6 @@
 # limitations under the License.
 #
 
-include_recipe "zabbix-custom-checks::default"
 include_recipe "chef_handler::default"
 
 template "#{node.chef_handler.handler_path}/zabbix-report.rb" do
