@@ -32,13 +32,17 @@ but I decided to separate it to another project in order to minimize cookbook de
 * `default['zabbix']['bin_dir']` - directory where zabbix_sender are stored
 * `default['zabbix']['etc_dir']` - directory where zabbix_agent.conf are stored
 
-## License and Authors
+## Authors
 
-Author:: [Vladimir Kamarzin][bitfag] (<vvk@vvk.pp.ru>)
-Author:: [Steffen Gebert][stephenking] (<steffen.gebert@typo3.org>)
+* Author:: [Vladimir Kamarzin](https://github.com/bitfag) (<vvk@vvk.pp.ru>)
+* Author:: [Steffen Gebert](https://github.com/StephenKing) (<steffen.gebert@typo3.org>)
 
-Copyright 2011, 2012, Steffen Gebert for TYPO3 Association
-Copyright 2016, Vladimir Kamarzin
+## Copyrights
+
+* Copyright 2011, 2012, Steffen Gebert for TYPO3 Association
+* Copyright 2016, Vladimir Kamarzin
+
+## License
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
