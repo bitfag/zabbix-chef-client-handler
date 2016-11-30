@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Service Chef-Client</template>
-            <name>Service Chef-Client</name>
+            <template>Service chef-client</template>
+            <name>Service chef-client</name>
             <groups>
                 <group>
                     <name>Custom Templates</name>
@@ -267,8 +267,8 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Service Chef-Client:custom.chef-client.last_run.success.last(0)}=0</expression>
-            <name>Last Chef-Client run failed</name>
+            <expression>{Service chef-client:custom.chef-client.last_run.success.last(0)}=0</expression>
+            <name>Last chef-client run failed</name>
             <url></url>
             <status>0</status>
             <priority>2</priority>
@@ -277,8 +277,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Service Chef-Client:custom.chef-client.last_run.elapsed_time.last(#3)}&gt;60</expression>
-            <name>Long execution time of last 3 Chef-Client runs</name>
+            <expression>{Service chef-client:custom.chef-client.last_run.elapsed_time.last(#3)}&gt;60</expression>
+            <name>Long execution time of last 3 chef-client runs</name>
             <url></url>
             <status>0</status>
             <priority>1</priority>
@@ -287,8 +287,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Service Chef-Client:custom.chef-client.last_run.start_time.nodata(7200)}=1</expression>
-            <name>No checkins from Chef-Client since 2 hours</name>
+            <expression>{Service chef-client:custom.chef-client.last_run.start_time.nodata(7200)}=1</expression>
+            <name>No checkins from chef-client since 2 hours</name>
             <url></url>
             <status>0</status>
             <priority>2</priority>
