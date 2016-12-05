@@ -277,7 +277,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Service chef-client:custom.chef-client.last_run.elapsed_time.last(#3)}&gt;60</expression>
+            <expression>{Service chef-client:custom.chef-client.last_run.elapsed_time.avg(#3)}&gt;60</expression>
             <name>Long execution time of last 3 chef-client runs</name>
             <url></url>
             <status>0</status>
