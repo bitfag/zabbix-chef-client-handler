@@ -29,8 +29,9 @@ but I decided to separate it to another project in order to minimize cookbook de
 
 ## Attributes
 
-* `default['zabbix']['bin_dir']` - directory where zabbix_sender are stored
-* `default['zabbix']['etc_dir']` - directory where zabbix_agent.conf are stored
+* `default['zabbix-handler']['bin_dir']` - directory where zabbix_sender are stored
+* `default['zabbix-handler']['etc_dir']` - directory where zabbix_agent.conf are stored
+* `default['zabbix-handler']['hostname']` - hostname that will be reported to zabbix
 
 ## Authors
 
