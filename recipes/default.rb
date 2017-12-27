@@ -1,4 +1,6 @@
 #
+# Author:: Vladimir Kamarzin (vvk@vvk.pp.ru)
+# Author:: Steffen Gebert (steffen.gebert@typo3.org)
 # Cookbook Name:: zabbix-chef-client-handler
 # Recipe:: default
 #
@@ -20,12 +22,12 @@
 
 include_recipe "chef_handler::default"
 
-template "#{node.chef_handler.handler_path}/zabbix-report.rb" do
+template "#{node['chef_handler']['handler_path']}/zabbix-report.rb" do
   source "chef-client-handler.rb"
 end
 
 # We register ourself as a report handler, which runs at the end of chef run
 chef_handler "Zabbix::Report" do
-  source "#{node.chef_handler.handler_path}/zabbix-report.rb"
+  source "#{node['chef_handler']['handler_path']}/zabbix-report.rb"
   action :enable
 end
