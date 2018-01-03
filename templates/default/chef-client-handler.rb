@@ -44,7 +44,7 @@ module Zabbix
 
       file.write(message)
       file.close()
-      cmd = [File.join(node['zabbix']['bin_dir'], "zabbix_sender"), "--config", File.join(node['zabbix']['etc_dir'], "zabbix_agentd.conf"), "--input-file", file.path]
+      cmd = [File.join(node['zabbix-handler']['bin_dir'], "zabbix_sender"), "--config", File.join(node['zabbix-handler']['etc_dir'], "zabbix_agentd.conf"), "--input-file", file.path]
       Chef::Log.debug "Sending to zabbix: #{message}"
       Chef::Log.debug "Command #{cmd.join(" ")}"
       if RUBY_VERSION < "1.9"
